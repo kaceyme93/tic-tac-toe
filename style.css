@@ -1,0 +1,43 @@
+.board{
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+}
+.square{
+    background-color: white;
+    color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+    
+}
+h1{
+    text-align: center;
+}
+#container{
+    display: flex;
+    justify-content: center;
+}
+
+.square:nth-child(3n+2) { 
+    border-left: 3px solid black;
+    border-right: 3px solid black;
+}
+.square:nth-child(n+4):nth-child(-n+6) {
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+  }
+  #player{
+      text-align: center;
+  }
+  #nameSubmission{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+  }
+  #resetBtn{
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+  }
